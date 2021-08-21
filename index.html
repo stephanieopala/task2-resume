@@ -13,19 +13,30 @@
 </head>
 <body>
     <header>
-        <a href="https://internship.zuri.team/" target="_blank"><img class="logo" src="./zuri.png" alt="logo" ></a>
-        <h2>Stephanie Opala</h2>
-        <h3>Front-end Developer</h3>
-        <div>
-            <p>Email: rispahopala@gmail.com</p>
-            <p>Tel No. +254 722 269125</p>
-            <p>Location: Kenya</p>
-        </div>
+        <nav>
+            <div class="logo">
+                <a href="https://internship.zuri.team/" target="_blank"><img class="logo__image" src="./zuri.png" alt="logo" ></a>
+            </div>
+            <div class="toggle">
+                <img src="./img/icons8-menu.svg" alt="toggle">
+            </div>
+            <ul class="menu">
+                <li class="menu__item"><a href="#home">Home</a></li>
+                <li class="menu__item"><a href="#aboutme">About Me</a></li>
+                <li class="menu__item"><a href="#portfolio">Portfolio</a></li>
+                <li class="menu__item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <hr>
     <main>
+        <!--Home-->
+        <section id="home">
+            <h2 class="home__name">Stephanie Opala</h2>
+            <h3 class="home__title">Front-end Developer</h3>
+            
+        </section>
         <!--About-->
-        <section class="about">
+        <section class="about" id="aboutme">
             <h3 class="about__title">About Me</h3>
             <p class="about__desc">I am a front-end developer and open source contributor who is passionate about developing user interfaces and web applications. 
                 I am an effective problem-solver, a fast learner with great interpersonal skills and a great team player. 
@@ -72,7 +83,68 @@
             <p>Translate user interface design wireframe to code.</p>
             <p>Collaborate with other developers and designer in the team</p>
         </section>
+        <!--Portfolio-->
+        <section id="portfolio" class="portfolio">
+            <h3 class="portfolio__title">Portfolio</h3>
+            <div class="container">
+              <div class="card">
+                <img class="card__image" src="./img/Capture2.PNG" alt="project1-img">
+                <div class="card__body">
+                  <h3 class="card__title">Reading-List App</h3>
+                  <p class="card__desc">Built with React Hooks, Context API, CSS. This app also makes use of local storage.</p>
+                  <div class="card__btn">
+                    <a href="https://reading-list-app-sopala.netlify.app/" target="_blank">Live</a> 
+                    <a href="https://github.com/stephanieopala/reading-list-app" target="_blank">Code</a> 
+                  </div>
+                </div>          
+              </div>
+              
+              <div class="card">
+                <img class="card__image" src="./img/ComingSoon.PNG" alt="project2-img">
+                <div class="card__body">
+                  <h3 class="card__title">Coming Soon Landing Page</h3>
+                  <p class="card__desc">This is a coming-soon landing page for an online clothing store. Built with HTML, CSS and JavaScript</p>
+                  <div class="card__btn">
+                    <a href="http://coming-soon-stephanieopala.vercel.app/" target="_blank">Live</a>
+                    <a href="https://github.com/stephanieopala/coming-soon" target="_blank">Code</a> 
+                  </div>
+                </div>
+              </div>
+      
+              <div class="card">
+                <img class="card__image" src="./img/blog-1.PNG" alt="project4-img">
+                <div class="card__body">
+                  <h3 class="card__title">Blog Website</h3>
+                  <p class="card__desc"> Built with NodeJs, Express, MongoDB, HTML and CSS</p>
+                  <div class="card__btn">
+                    <a href="#" target="_blank">Live</a>
+                    <a href="https://github.com/stephanieopala/my-blog2" target="_blank"> Code</a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="card">
+                <img class="card__image" src="./img/Design.png" alt="project3-img">
+                <div class="card__body">
+                  <h3 class="card__title">Kwetu Flowers Landing Page</h3>
+                  <p class="card__desc">A landing page built with HTML, SCSS and JavaScript</p>
+                  <div class="card__btn">
+                    <a href="https://kwetu-flowers.herokuapp.com/" target="_blank">Live</a>
+                    <a href="https://github.com/stephanieopala/landing-page-assessment" target="_blank"> Code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+      
+        <section class="contact" id="contact">
+            <h3>Contact Me</h3>
+            <p>Email: rispahopala@gmail.com</p>
+            <p>Tel No. +254 722 269125</p>
+            <p>Location: Kenya</p>
+        </section>
     </main>
+
     <hr>
     <footer>
         <ul class="social__icons">
@@ -80,5 +152,6 @@
             <li><a href="https://github.com/stephanieopala" target="_blank"><i class="fa fa-github"></i></a></li>
         </ul>
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>
