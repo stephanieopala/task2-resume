@@ -172,6 +172,7 @@ nav {
   padding: 10px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
           box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  text-align: center;
 }
 
 .card__image {
@@ -189,7 +190,7 @@ nav {
 }
 
 .card__btn {
-  padding: 20px 0;
+  padding: 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,12 +203,13 @@ nav {
 }
 
 .card__btn a {
-  border: none;
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--primary-color);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+.card__btn a img {
+  width: 30px;
+  height: auto;
 }
 
 .card__btn a:first-of-type {

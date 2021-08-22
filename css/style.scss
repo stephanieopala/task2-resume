@@ -135,6 +135,7 @@ nav {
      margin: 0 0 2rem 0;
      padding: 10px;
      box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+     text-align: center;
  
      &__image {
          width: 100%;
@@ -149,19 +150,21 @@ nav {
          
      }
      &__btn {
-         padding: 20px 0;
+         padding: 10px 0;
          display: flex;
          justify-content: center;
          align-items: center;
          
          & a {
-             border: none;
-             font-size: 18px;
-             font-weight: 700;
-             color: var(--primary-color);;
+             
              transition: all 0.3s ease;
-             &:hover {
+        
+             & img {
+                 width: 30px;
+                 height: auto;
+                
              }
+             
              &:first-of-type {
                  margin-right: 10px;
              }
